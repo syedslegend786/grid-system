@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .wrapper {
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        grid-gap: 1rem;
+    }
+
+    .wrapper .row1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .wrapper .row2 {}
+
+    .wrapper .row1 .row1__1 {
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        grid-gap: 1rem;
+    }
+
+    .wrapper .row1 .row1__2 {
+        background-color: gold;
+    }
+
+    .wrapper .row1 .row1__3 {
+        display: grid;
+        grid-template-columns: repeat(1, fr);
+        grid-gap: 1rem;
+    }
+
+    .wrapper .row1 .row1__1 .row1__1__1 {
+        background-color: green;
+    }
+
+    .wrapper .row1 .row1__1 .row1__1__2 {
+        background-color: red;
+    }
+
+    .wrapper .row1 .row1__1 .row1__1__3 {
+        background-color: saddlebrown;
+    }
+
+    .wrapper .row1 .row1__3 .row1__3__1 {
+        background-color: yellow;
+    }
+
+    .wrapper .row1 .row1__3 .row1__3__2 {
+        background-color: red;
+    }
+
+    .wrapper .row1 .row1__3 .row1__3__3 {
+        background-color: brown;
+    }
+
+
+
+
+    .wrapper .row2 {
+        display: grid;
+        grid-template-columns: 1fr .5fr 1fr .5fr;
+        grid-gap: 1rem;
+    }
+
+    .wrapper .row2 .row2__1 {
+        background-color: chartreuse;
+    }
+
+    .wrapper .row2 .row2__2 {
+        display: grid;
+        grid-gap: 1rem;
+    }
+
+    .wrapper .row2 .row2__3 {
+        background-color: chocolate;
+        grid-auto-flow: 3/4;
+    }
+    .wrapper .row2 .row2__4 {
+        background-color: blue;
+    }
+
+    .wrapper .row2 .row2__2__1 {
+        background-color: grey;
+    }
+
+    .wrapper .row2 .row2__2__2 {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="row1">
+            <div class="row1__1">
+                <div class="row1__1__1">
+
+                </div>
+                <div class="row1__1__2">
+
+                </div>
+                <div class="row1__1__3">
+
+                </div>
+            </div>
+            <div class="row1__2">
+
+            </div>
+            <div class="row1__3">
+                <div class="row1__3__1">
+
+                </div>
+                <div class="row1__3__2">
+
+                </div>
+                <div class="row1__3__3">
+
+                </div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="row2__1">
+
+            </div>
+            <div class="row2__2">
+                <div class="row2__2__1">
+
+                </div>
+                <div class="row2__2__2">
+
+                </div>
+            </div>
+            <div class="row2__3">
+
+            </div>
+            <div class="row2__4">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
